@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:4000/api/jokes')
+      .get('https://funnyjokes-backend.onrender.com/api/jokes')
       .then((res) => setJokes(res.data))
       .catch((err) => console.error(err));
   }, []); // Adding the empty dependency array to avoid multiple API calls
